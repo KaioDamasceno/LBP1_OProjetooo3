@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<h1>Dashboard</h1>
+<p>Bem-vindo ao seu painel! Aqui estão suas informações:</p>
+<ul>
+    <li>ID: {{ session.get('id') }}</li>
+    <li>Tipo de Usuário: {{ session.get('tipo') }}</li>
+</ul>
+<!-- Adicione mais informações relevantes aqui -->
+{% endblock %}

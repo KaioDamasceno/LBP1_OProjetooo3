@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Página Inicial{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="{{ url_for('geral.homePage') }}">Home</a>
+            {% if session.get('id') %}
+                <a href="{{ url_for('login.logout') }}">Logout</a>
+                {% if session.get('tipo') == 1 %}
+                    <a href="{{ url_for('geral.administracao') }}">Administração</a>
+                {% endif %}
+            {% else %}
+                <a href="{{ url_for('login.login') }}">Login</a>
+            {% endif %}
+        </nav>
+    </header>
+    <main>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2024 Sua Empresa</p>
+    </footer>
+</body>
+</html>

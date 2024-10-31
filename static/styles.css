@@ -1,0 +1,132 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Cor de fundo escura */
+    color: #ffffff; /* Texto branco */
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #4caf50; /* Cor dos links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos do Container Principal */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Estilos do Cabeçalho */
+header {
+    background-color: #1f1f1f; /* Cor de fundo do cabeçalho */
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Estilos do Formulário de Login */
+.login-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #1f1f1f; /* Cor de fundo do formulário */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #444; /* Bordas escuras */
+    border-radius: 4px;
+    background-color: #222; /* Cor de fundo do input */
+    color: #ffffff; /* Texto do input */
+}
+
+/* Estilos para Botões */
+button {
+    padding: 10px 15px;
+    background-color: #4caf50; /* Cor do botão */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049; /* Cor do botão ao passar o mouse */
+}
+
+/* Estilos do Container de Erro */
+.error-container {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1f1f1f; /* Cor de fundo das páginas de erro */
+    border: 1px solid #444;
+    border-radius: 8px;
+}
+
+.error-container h1 {
+    color: #f44336; /* Cor para os títulos de erro */
+}
+
+.error-container a {
+    color: #4caf50; /* Cor para links de retorno */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilos do Painel de Administração */
+.admin-container {
+    padding: 20px;
+    background-color: #1f1f1f; /* Cor de fundo do painel */
+    border-radius: 8px;
+}
+
+.admin-container h1 {
+    color: #fff;
+}
+
+/* Estilos do Dashboard */
+.dashboard {
+    padding: 20px;
+    background-color: #1f1f1f; /* Cor de fundo do dashboard */
+    border-radius: 8px;
+}
+
+.dashboard h1 {
+    color: #fff;
+}
+
+/* Estilos do Rodapé */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #1f1f1f; /* Cor de fundo do rodapé */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    color: #bbb; /* Texto do rodapé */
+}
